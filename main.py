@@ -119,7 +119,8 @@ def Solve_Unknown_Task(question):
         "model": "gpt-4o-mini",
         "messages": [{"role": "user", "content": question+" return only the answer"}]
     }
-    API_KEY = os.getenv("AIPROXY_TOKEN")
+    #API_KEY = os.getenv("AIPROXY_TOKEN")
+    API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjIyZjMwMDE5NjFAZHMuc3R1ZHkuaWl0bS5hYy5pbiJ9.hQ_yc-GgXGQUSiYH-vea-FfjwzdfDoHTCxuLrTtYAzI"
     headers = {
         "Content-Type": "application/json",
         "Authorization": f"Bearer {API_KEY}"
